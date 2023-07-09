@@ -1,0 +1,57 @@
+body{
+    background-color:cornsilk;
+    text-align: center;
+}
+
+body {
+    background-color: cornsilk;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+p{
+    margin-bottom: 100px;  
+}
+
+#demobutton {
+    background-color: #ADD8E6;
+    color: black;
+    width: 200px;
+    height: 80px;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 80px #0000ff;
+    animation: shiny-border 2s infinite, neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes shiny-border {
+    0% {
+        background-image: linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0.2) 100%);
+    }
+    50% {
+        background-image: linear-gradient(45deg, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.8) 100%);
+    }
+    100% {
+        background-image: linear-gradient(45deg, rgba(255,255,255,0.8) 0%, rgba(0,0,0,0.2) 100%);
+    }
+}
+
+@keyframes neon-glow {
+    0% {
+        box-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 80px #0000ff;
+    }
+    100% {
+        box-shadow: 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 80px #0000ff, 0 0 160px #0000ff;
+    }
+}
+
+#demobutton:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
